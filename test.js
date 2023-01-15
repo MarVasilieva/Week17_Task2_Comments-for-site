@@ -1,5 +1,5 @@
 let comments = [];
-//loadComments();
+loadComments();
 commentadd.addEventListener('click',() =>{
     event.preventDefault();
    let commentName =  document.getElementById('comment-name'); 
@@ -9,6 +9,7 @@ commentadd.addEventListener('click',() =>{
 
    let comment = {
     name : commentName.value,
+    
     body : newcommentBody,
     time : Math.floor(Date.now()/1000)
    }
